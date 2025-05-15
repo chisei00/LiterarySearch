@@ -3,6 +3,10 @@
 import os
 import sys
 
+g7_lsearch = 'D:\codes\g7_lsearch'
+if g7_lsearch not in sys.path:
+        sys.path = [g7_lsearch] + sys.path
+
 
 def main():
     """Run administrative tasks."""
