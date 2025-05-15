@@ -37,10 +37,12 @@ cd LiterarySearch
 
 ### 2. Create & activate a virtual environment
 ```bash
+py -m venv lsvenv
+
 lsvenv\Scripts\activate
 ```
 
-### 3. Install dependencies
+### 3. Install dependencies (navigate to lsproject folder)
 ```bash
 pip install -r requirements.txt
 ```
