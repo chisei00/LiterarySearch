@@ -1,11 +1,46 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="{% static 'css/Lmain.css' %}">
 </head>
 <body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="logo">LS<span class="book-icon">▮▮▮</span></div>
+      <h2>BOOKS OF THE WEEK!</h2>
+      <img src="book-cover.jpg" alt="Deep Cuts by Holly Brickley" class="book-cover"/>
+    </div>
+    <div class="login-card">
+      <h1>Login</h1>
+      <form action="" method="POST">
+        {% csrf_token %} {% for field in form %}
+        {{ field.label }}: <br/>
+        {{ field }}
+        {% endfor %}
+        <button type="submit">Login</button>
+        </form>
+      <div class="extras">
+        <p>Don't have an account? <a href="{% url 'register' %}">Signup here</a></p>
+        <div class="divider"><span></span>or login with<span></span></div>
+        <div class="social-icons">
+          <img src="facebook-icon.png" alt="Facebook" />
+          <img src="apple-icon.png" alt="Apple" />
+          <img src="google-icon.png" alt="Google" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!-- <body>
     <h1>LOGIN</h1>
         <form action="" method="POST">
         {% csrf_token %} {% for field in form %}
@@ -18,4 +53,4 @@
         </form>
      <p>Don't have an account? <a href="{% url 'register' %}">Signup here</a></p>
     </body>
-</html>
+</html> -->
