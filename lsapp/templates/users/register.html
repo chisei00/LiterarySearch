@@ -1,12 +1,74 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+
+    <link rel="icon" type="image/x-icon" href="{% static 'images/icon.ico' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bg.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reg.css' %}">
 </head>
 <body>
-    <h3>Register here</h3>
+  <section>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+  </section>
+  <header>
+    <div class="logo"><a href="{% url 'home' %}">LS</a></div>
+  </header>
+  <div class="container">
+    <div class="register-box">
+      <h1>Register</h1>
+      <form action="" method="POST">
+        {% csrf_token %} {% for field in form %}
+        <div>
+            <p>
+                {{ field.label }}: <br />
+                {{ field }}
+            </p>
+            {% for error in field.errors %}
+
+            <small style="color:red"> {{error}} </small>
+            {% endfor %}
+        </div>
+        {% endfor %}
+        <button type="submit">Sign Up</button>
+        <p class="terms">
+          By clicking <strong>Sign Up</strong>, you agree to our <u>Terms</u> and have read and acknowledge our <strong><u>Global Privacy Statement</u></strong>
+        </p>
+      </form>
+    </div>
+    <div class="quote-box">
+      <div class="quote-mark">“</div>
+      <p class="quote">
+        The road goes ever on and on,<br />
+        Down from the door where it began.<br />
+        Now far ahead the road has gone,<br />
+        And I must follow if I can,<br />
+        Pursuing it with weary feet,<br />
+        Until it joins some larger way,<br />
+        Where many paths and errands meet.<br />
+        And whither then? I cannot say.
+      </p>
+      <p class="author">
+        — J.R.R. Tolkien<br />
+        <em>The Fellowship of the Ring</em>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
+<body>
+
+    
+    <!-- <h3>Register here</h3>
     <hr />
 
     <form action="" method="POST">
@@ -23,6 +85,6 @@
         </div>
         {% endfor %}
         <button type="submit"> Register</button>
-    </form>
+    </form> -->
 </body>
 </html>

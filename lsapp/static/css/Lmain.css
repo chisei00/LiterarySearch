@@ -57,7 +57,6 @@ div.logo a {
   height: 100vh;
   justify-content: center;
   margin-bottom: 100px;
-  border: red solid 1px;
 }
 /* book cover - slide show */
 .cover-container{
@@ -157,7 +156,7 @@ div.logo a {
   border-radius: 10px;
   color: white;
   margin-bottom: 30px;
-}
+  font-size: 1rem;}
 
 .login-card button {
   display: block;

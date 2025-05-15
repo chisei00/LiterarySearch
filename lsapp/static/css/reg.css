@@ -1,0 +1,118 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 80%;
+  /* border: purple 1px solid; */
+}
+
+
+.register-box {
+  /* background-color: #7a4f4f;  */
+  height: 90%;
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 30px;
+  margin-bottom: 10%;
+  margin-right: 20%;
+  /* border: blue 1px solid; */
+}
+
+.register-box h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+form {
+  max-width: 500px; /* or any width you prefer */
+  margin: 0 auto;
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="username"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+
+.register-box button {
+  display: block;
+  width: 50%;
+  background-color: #FFFFFF;
+  color: #774C4C;
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  font-size: 16px;
+  margin: 50px 0 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.register-box button:hover {
+    background-color: #524141;
+    color: #FFFFFF;  
+}
+
+
+.terms {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.quote-box {
+  /* background-color: #5c84c4; */
+  flex: 1;
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+   /* border: orangered 1px solid;  */
+}
+
+.quote-mark {
+  font-size: 110px;
+  line-height: 0;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-size:28px;
+  font-weight: bold;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.author {
+  font-size: 20px;
+  font-style: italic;
+}
