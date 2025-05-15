@@ -9,16 +9,11 @@
 
     <link rel="icon" type="image/x-icon" href="{% static 'images/icon.ico' %}">
 
-    <link rel="stylesheet" href="{% static 'css/bg.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/bg.css' %}"> -->
     <link rel="stylesheet" href="{% static 'css/Lmain.css' %}">
 
 </head>
 <body>
-<section>
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-</section>
   <header>
     <div class="logo"><a href="{% url 'home' %}">LS</a></div>
   </header>
@@ -34,6 +29,12 @@
       </div>
   </div>
   <div class="container">
+
+    {% for message in messages%}
+         <div id="messagefade">{{message}}</div>
+    {% endfor %}
+    <script type="text/javascript" src="{% static 'javascript/animate.js' %}"></script>
+
     <div class="login-card">
       <h1>Login</h1>
       <form action="" method="POST">

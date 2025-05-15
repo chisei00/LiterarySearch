@@ -28,8 +28,28 @@ div.logo a {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: bold;
-
 }
+
+#messagefade {
+  background-color: #FFFFFF;
+  color: #000000;
+  position: absolute;
+  align-self: center;
+  margin: 0 auto;
+  top: 20%;
+  right:15%;
+  padding: 30px;
+  border-radius: 15px; 
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 0;
+  transform: opacity 1s ease-in-out;
+}
+
+#messagefade.visible{
+  opacity: 1;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -37,6 +57,7 @@ div.logo a {
   height: 100vh;
   justify-content: center;
   margin-bottom: 100px;
+  border: red solid 1px;
 }
 /* book cover - slide show */
 .cover-container{
