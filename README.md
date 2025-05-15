@@ -24,6 +24,7 @@ A web application built with Django and PostgreSQL that allows users to search, 
 - [pip](https://pip.pypa.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [GitHub](https://github.com/)
+- [Vue.js](https://vuejs.org)
 
 ---
 
