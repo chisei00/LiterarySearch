@@ -27,7 +27,7 @@ A web application built with Django and PostgreSQL that allows users to search, 
 
 ---
 
-## 🔧 Installation (Local Development)
+## 🔧 Installation (Local Development) (bash  --Windows)
 
 ### 1. Clone the repo
 ```bash
@@ -37,7 +37,6 @@ cd LiterarySearch
 
 ### 2. Create & activate a virtual environment
 ```bash
-# Windows
 lsvenv\Scripts\activate
 ```
 
@@ -59,6 +58,7 @@ python manage.py runserver
 ---
 
 ##👨‍💻 Team Members
+
 @Genesis Naldoza
 
 @Nathaniel L. Nieva
