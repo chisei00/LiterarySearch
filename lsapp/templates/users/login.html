@@ -9,16 +9,31 @@
 
     <link rel="icon" type="image/x-icon" href="{% static 'images/icon.ico' %}">
 
+    <link rel="stylesheet" href="{% static 'css/bg.css' %}">
     <link rel="stylesheet" href="{% static 'css/Lmain.css' %}">
 
 </head>
 <body>
+<section>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+</section>
   <header>
-    <div class="logo">LS</div>
+    <div class="logo"><a href="{% url 'home' %}">LS</a></div>
   </header>
+  <div class = "cover-container">
+     <h2>BOOKS OF THE WEEK!</h2>
+      <div class="slideshow-container">
+        <div class="wrapper">
+            <img src="/static/images/bc1.jpg"/>
+            <img src="/static/images/bc2.jpg"/>
+            <img src="/static/images/bc3.jpg"/>
+            <img src="/static/images/bc4.jpg"/>
+        </div>
+      </div>
+  </div>
   <div class="container">
-    <h2>BOOKS OF THE WEEK!</h2>
-      <img src="book-cover.jpg" alt="Deep Cuts by Holly Brickley" class="book-cover"/>
     <div class="login-card">
       <h1>Login</h1>
       <form action="" method="POST">
@@ -32,9 +47,8 @@
         <p>Don't have an account? <a href="{% url 'register' %}">Signup here</a></p>
         <div class="divider"><span></span>or login with<span></span></div>
         <div class="social-icons">
-          <img src="facebook-icon.png" alt="Facebook" />
-          <img src="apple-icon.png" alt="Apple" />
-          <img src="google-icon.png" alt="Google" />
+          <img src="/static/images/fb.png" alt="Facebook" />
+          <img src="/static/images/google.png" alt="Google" />
         </div>
       </div>
     </div>

@@ -9,13 +9,14 @@
 
     <link rel="icon" type="image/x-icon" href="{% static 'images/icon.ico' %}">
 
+    <!-- <link rel="stylesheet" href="{% static 'css/bg.css' %}"> -->
     <link rel="stylesheet" href="{% static 'css/Imain.css' %}">
 </head>
 <body>
   <header>
-    <div class="logo">LS</div>
+    <div class="logo"><a href="{% url 'home' %}">LS</a></div>
     <div class="auth-buttons">
-      <button class="outlined"><a class="buttonHeader"href="{% url 'login' %}">Login</a></button>
+      <button class="outlined"><a class="buttonHeader" href="{% url 'login' %}">Login</a></button>
       <button class="outlined"><a class="buttonHeader" href="{% url 'register' %}">Sign up</a></button>
     </div>
   </header>
