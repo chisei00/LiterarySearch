@@ -69,9 +69,3 @@ python manage.py runserver
 @John Ronald D. Penetrante
 
 @Franz B. Torallo
-
-
-
-
-
-
