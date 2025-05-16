@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-pf^cpu@u=7iqf1m*=dob5s)(3o8-tca(f)yk(#s_$qs4-x_ov*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = []
 
 
@@ -38,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'restframework',
+    'rest_framework',
 
     'lsapp',
 ]
@@ -142,7 +143,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [BASE_DIR / "static"]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#login success
+LOGIN_REDIRECT_URL = 'home'

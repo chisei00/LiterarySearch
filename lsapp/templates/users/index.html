@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literary Search</title>
+
+    <link rel="icon" type="image/x-icon" href="{% static 'images/icon.ico' %}">
+
+    <!-- <link rel="stylesheet" href="{% static 'css/bg.css' %}"> -->
+     <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Imain.css' %}">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="{% url 'home' %}">LS</a></div>
+    <div class="auth-buttons">
+      <button class="outlined"><a class="buttonHeader" href="{% url 'login' %}">Login</a></button>
+      <button class="outlined"><a class="buttonHeader" href="{% url 'register' %}">Sign up</a></button>
+    </div>
+  </header>
+  
+   <main>
+    <p class="subheading">Literary Search</p>
+    <h1 class="headline">WHERE BOOKS<br>FINDS YOU</h1>
+
+    <div class="search-wrapper">
+        <div class="search-bar">
+            <input type="text" placeholder="Search by Author, Genre…" />
+            <button>Search</button>
+        </div>
+    </div>
+    <div class="book-grid">
+        <img src="static/images/Mstars.jpg" id="Book1" class="book-cover" alt="Book 1">
+        <img src="static/images/bheart.jpg" id="Book2" class="book-cover" alt="Book 2">
+        <img src="static/images/BG.jpg" id="Book3" class="book-cover" alt="Book 3">
+        <img src="static/images/dune.jpg" id="Book4" class="book-cover" alt="Book 4">
+        <img src="static/images/hpotter.jpg" id="Book5" alt="Book 5">
+        <img src="static/images/gt.jpg" id="Book6" class="book-cover" alt="Book 6">
+        <img src="static/images/hunt.jpg" id="Book7" class="book-cover" alt="Book 7">
+        <img src="static/images/shining.jpg" id="Book8" class="book-cover" alt="Book 8">
+        <img src="static/images/it.jpg" id="Book9" class="book-cover" alt="Book 9">
+    </div>
+  </main>
+</body>
+</html>
